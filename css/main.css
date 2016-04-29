@@ -7,10 +7,26 @@
 
 /*top nav bar styles*/
 .navbar-inverse {
-  background-color: blue;
-  border-color: blue;
+  background-color: #BEBBFF;
+  border-color: #BEBBFF;
+  border-radius: 0px;
 }
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #8B89BA;
+}
+/*nav bar text*/
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+  background-color: #8B89BA;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #8B89BA;
+}
+
 #carousel-seactr {
   height: auto;
   width: 90%;
+}
+
+a {
+  color: #BEBBFF;
 }
