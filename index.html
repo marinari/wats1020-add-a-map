@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -62,13 +62,41 @@
     <div class="jumbotron">
       <div class="container">
         <h1 id="home">Seattle Center Information</h1>
-        <!-- TODO: Create an HTML structure that will trigger the Bootstrap
-                   carousel feature. http://getbootstrap.com/javascript/#carousel
+        <div id="carousel-seactr" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-seactr" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-seactr" data-slide-to="1"></li>
+          <li data-target="#carousel-seactr" data-slide-to="2"></li>
+        </ol>
 
-                   Bonus points if you go to the trouble of making nice captions
-                   for the images. If you are using the Mt. Rainier images, then
-                   there are readymade captions available from the Wikipedia
-                   source page. -->
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/carousel/bumbershoot-sea-ctr.jpg" alt="Seattle Center at Night">
+            <div class="carousel-caption">
+              Seattle Center at Night
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/carousel/seattle-center.jpg" alt="EMP Museum with Space Needle in view">
+            <div class="carousel-caption">
+              EMP Museum with Space Needle in background
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-seactr" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-seactr" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
       </div>
     </div>
 
@@ -92,11 +120,7 @@ that delight and inspire the human spirit to build stronger communities.&rdquo;
                 </ul>
               </li>
           </ul>
-      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
-            http://getbootstrap.com/javascript/#tabs
-
-            You will need to add HTML structure to show each of the divs below
-            as a unique tab. -->
+      <!-- Bootstrap Tabs Feature -->
       <div class="tab-content">
           <div id="about" class="tab-pane fade in active">
             <h2>About</h2>

@@ -2,19 +2,15 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+#map-container { height: 180px;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*top nav bar styles*/
+.navbar-inverse {
+  background-color: blue;
+  border-color: blue;
+}
+#carousel-seactr {
+  height: auto;
+  width: 90%;
+}
