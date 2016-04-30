@@ -26,15 +26,8 @@ $( document ).ready(function() {
       "Map View": drawLayer,
       "Open Street Maps": osm
   }
-
   L.control.layers(mapLayers).addTo(map);
   satLayer.addTo(map);
-
-  /*
-  var marker = L.marker([46.852, -121.760]).addTo(map);
-  marker.bindPopup("<b>Welcome to Mt. Rainier!</b><br>This peak is 4,392 feet high.");
-  */
-
 });
 
 
@@ -42,3 +35,15 @@ $( document ).ready(function() {
 // TODO: Customize that Map to show markers with popups at no fewer than 3
 // interesting locations. (You'll need to figure out the latitude/longitude for
 // these locations using a mapping tool such as Google Maps.)
+/*
+var circle = L.circle([47.620426, -122.349149, 250, {
+  color: '#8B89BA',
+  fillColor: '#BEBBFF',
+  fillOpacity: 0.5
+}).addTo(mymap);
+*/
+
+/*
+var marker = L.marker([46.852, -121.760]).addTo(map);
+marker.bindPopup("<b>Welcome to Mt. Rainier!</b><br>This peak is 4,392 feet high.");
+*/
