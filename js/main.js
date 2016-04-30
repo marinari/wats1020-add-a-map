@@ -31,7 +31,7 @@ $( document ).ready(function() {
     color: '#8B89BA',
     fillColor: '#BEBBFF',
     fillOpacity: 0.5
-  }).addTo(mymap);
+  }).addTo(map);
 
 
 });
