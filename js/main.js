@@ -22,7 +22,7 @@ $( document ).ready(function() {
       "Open Street Maps": osm
   }
 
-  var map = L.map('map-container').setView([46.852, -121.760], 13);
+  var map = L.map('map-container').setView([47.621729, -122.350072], 13);
 
   L.control.layers(mapLayers).addTo(map);
   satLayer.addTo(map);
