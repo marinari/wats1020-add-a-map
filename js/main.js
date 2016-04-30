@@ -4,11 +4,11 @@
 $( document ).ready(function() {
 
   // Inside of your on ready handler, invoke the Leaflet.js library to draw a map in your `#map-container` div.
-  var mymap = L.map('map-container').setView([47.622255, -122.351292], 15);
+  var mymap = L.map('map-container').setView([47.622255, -122.351292], 13);
 
   var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
   var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-  var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 20, attribution: osmAttrib});
+  var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});
 
   //Add 2 layers to your map.
   var satLayer = L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.png', {
