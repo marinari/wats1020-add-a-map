@@ -26,6 +26,7 @@ $( document ).ready(function() {
       "Map View": drawLayer,
       "Open Street Maps": osm
   }
+
   L.control.layers(mapLayers).addTo(map);
   satLayer.addTo(map);
 
@@ -33,12 +34,6 @@ $( document ).ready(function() {
   var marker = L.marker([46.852, -121.760]).addTo(map);
   marker.bindPopup("<b>Welcome to Mt. Rainier!</b><br>This peak is 4,392 feet high.");
   */
-
-  var circle = L.circle([47.620426, -122.349149, 250, {
-    color: '#8B89BA',
-    fillColor: '#BEBBFF',
-    fillOpacity: 0.5
-}).addTo(mymap);
 
 });
 
