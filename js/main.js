@@ -30,7 +30,7 @@ $( document ).ready(function() {
   var marker = L.marker([47.620580, -122.349356]).addTo(map);
   marker.bindPopup("The Space Needle").openPopup();
 
-  var marker2 = L.marker(47.621484, -122.348337]).addTo(map);
+  var marker2 = L.marker([47.621484, -122.348337]).addTo(map);
   marker2.bindPopup("The Experience Music Project Museum").openPopup();
 
   var marker3 = L.marker([47.622536, -122.351856]).addTo(map);
