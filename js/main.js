@@ -26,6 +26,16 @@ $( document ).ready(function() {
 
   L.control.layers(mapLayers).addTo(map);
   satLayer.addTo(map);
+
+  var marker = L.marker([47.620580, -122.349356]).addTo(map);
+  marker.bindPopup("The Space Needle").openPopup();
+
+  var marker2 = L.marker([47.620580, -122.349356]).addTo(map);
+  marker2.bindPopup("The Experience Music Project Museum").openPopup();
+
+  var marker3 = L.marker([47.622460, -122.352022]).addTo(map);
+  marker3.bindPopup("The International Fountain").openPopup();
+
 });
 
 
